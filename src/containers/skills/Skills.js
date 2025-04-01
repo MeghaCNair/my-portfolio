@@ -3,7 +3,7 @@ import "./Skills.scss";
 import SoftwareSkill from "../../components/softwareSkills/SoftwareSkill";
 import {illustration, skillsSection} from "../../portfolio";
 import {Fade} from "react-reveal";
-import codingPerson from "../../assets/lottie/codingPerson";
+import workingwoman from "../../assets/lottie/workingwoman";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
 
@@ -18,7 +18,7 @@ export default function Skills() {
         <Fade left duration={1000}>
           <div className="skills-image-div">
             {illustration.animated ? (
-              <DisplayLottie animationData={codingPerson} />
+              <DisplayLottie animationData={workingwoman} />
             ) : (
               <img
                 alt="Man Working"
@@ -43,7 +43,6 @@ export default function Skills() {
             >
               {skillsSection.subTitle}
             </p>
-            <SoftwareSkill />
             <div>
               {skillsSection.skills.map((skills, i) => {
                 return (
@@ -60,9 +59,12 @@ export default function Skills() {
                 );
               })}
             </div>
+          
           </div>
         </Fade>
+        
       </div>
+      <SoftwareSkill />
     </div>
   );
 }

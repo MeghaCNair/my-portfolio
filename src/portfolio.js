@@ -24,7 +24,7 @@ const greeting = {
   subusername:"Megha Nair",
   title: "Hi all, I'm Megha",
   subTitle: emoji(
-    "A passionate data enthusiast 📊🚀 with expertise in uncovering insights, building predictive models, and crafting compelling visual stories using Python, SQL, Power BI, and Machine Learning!"
+    "I’m passionate about data — digging deep for insights, modeling the future, and visualizing it all in ways that drive action. Whether it’s Python, SQL, Power BI, or machine learning, I use the right tools to solve real problems."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -47,7 +47,7 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "PASSIONATE DATA PROFESSIONAL EXPLORING THE WORLD OF DATA & AI",
+  subTitle: "",
   skills: [
     emoji(
       "🚀Turn raw data into insights with Python,R & SQL",
@@ -57,7 +57,6 @@ const skillsSection = {
       "🤖 Build ML models and pipelines"
     ),
     emoji("📈 Optimize decision-making with data-driven strategies"),
-    emoji("⚡ Deploy AI solutions using cloud platforms"),
     emoji("📚 Continuously learning and exploring new technologies"),
 
   ],
@@ -67,57 +66,47 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
+      skillName: "Data Analysis and Visualization",
+      listOfSkills: ["Python", "R", "Tableau", "Power BI","MS Excel","SQL"],
+      fontAwesomeClassname: "fas fa-chart-pie"
     },
     {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
+      skillName: "Statististical Analysis",
+      fontAwesomeClassname: "fas fa-chart-line",
+      listOfSkills: ["Statistics", "Hypothesis Testing"]
     },
     {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
+      skillName: "Front end development",
+      listOfSkills: ["html-5", "css3", "JavaScript", "ReactJS"],
+      fontAwesomeClassname: "fas fa-laptop-code"
     },
     {
-      skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      skillName: "DBMS/Big Data",
+      fontAwesomeClassname: "fas fa-database",
+      listOfSkills: ["SQL", "NoSQL","Hive","Hadoop","Spark"]
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      skillName: "Aritificial Intelligence",
+      fontAwesomeClassname: "fas fa-robot",
+      listOfSkills: ["Machine Learning", "NLP","Large Language Models","Deep Learning"]
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "Cloud Technologies",
+      fontAwesomeClassname: "fas fa-cloud",
+      listOfSkills: ["AWS", "Azure"]
+    },
+
+    {
+      skillName: "Project Management",
+      fontAwesomeClassname: "fas fa-tasks",
+      listOfSkills: ["Agile", "Scrum", "Kanban"]
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
-    },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
+      skillName:"Domains",
+      fontAwesomeClassname: "fas fa-globe",
+      listOfSkills: ["Retail","E-commerce","B2B","B2C"]
     }
+     
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -152,7 +141,7 @@ const educationInfo = {
 // Your top 3 proficient stacks/tech experience
 
 const techStack = {
-  viewSkillBars: true, //Set it to true to show Proficiency Section
+  viewSkillBars: false, //Set it to true to show Proficiency Section
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
@@ -180,10 +169,10 @@ const workExperiences = {
       company: "The University of Texas at Dallas",
       companylogo: require("./assets/images/UTDLOGO.png"),
       date: "Aug 2024 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Facilitated practical learning in data visualization and machine learning using R and Python, improving assessment outcomes by 20%. ",
+        "Enhanced course curriculum and content according to industry trends and requirements. "
       ]
     },
     {
@@ -191,10 +180,11 @@ const workExperiences = {
       company: "Publicis Sapient",
       companylogo: require("./assets/images/Sapient.png"),
       date: "Jun 2022 - July 2023",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Developed a mobile Point-of-Sale (mPOS) Application UI for The Container Store increasing customer satisfaction by 20%.",
+        "Conducted funnel analysis to identify drop-off points, optimizing user navigation and reducing drop-off rates by 18%. ",
+        "Engineered clickstream analysis to monitor user behavior resulting in a 15% increase in sales conversion rates."
       ]
     },
     {
@@ -202,10 +192,11 @@ const workExperiences = {
       company: "Accenture",
       companylogo: require("./assets/images/Accenture-Logo.png"),
       date: "Nov 2018 – Jun 2022",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      desc: "",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Spearheaded the development of a web application for creating custom client proposals, cutting operational costs and time by 90%. ",
+        "Integrated intelligent template recommendations based on historical usage, improving stakeholder efficiency by 30%.",
+        "Collaborated with cross-functional teams to transform client requirements into visually engaging, interactive solutions. "
       ]
     }
   ]
@@ -262,51 +253,48 @@ const achievementSection = {
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "Microsoft Azure Fundamentals - AZ900",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      imageAlt: "Google Code-In Logo",
+        "",
+      image: require("./assets/images/azure-icon.png"),
+      imageAlt: "MS-AZ900",
       footerLink: [
         {
           name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
+          url: "https://www.credly.com/badges/1c7889ff-0613-4a7e-8f07-33e1988164db/linked_in_profile"
         }
       ]
     },
     {
-      title: "Google Assistant Action",
+      title: "SQL For Data Science",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      imageAlt: "Google Assistant Action Logo",
+        "",
+      image: require("./assets/images/uc_davis_logo.jpeg"),
+      imageAlt: "UCDavis",
       footerLink: [
         {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
+          name: "Certification",
+          url: "https://www.coursera.org/account/accomplishments/certificate/EJG7GUMUTCU6"
         }
       ]
     },
 
     {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      imageAlt: "PWA Logo",
+      title: "Applied Plotting,Charting and Data representation in Python",
+      subtitle: "",
+      image: require("./assets/images/umichigan.jpeg"),
+      imageAlt: "UM Logo",
       footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
+        {name: "Certification", url: "https://www.coursera.org/account/accomplishments/verify/QKF7G5WNEGU3"},
+      ]
+    },
+    {
+      title: "Target Dopper Analysis using Compressive Sensing",
+      subtitle: "",
+      image: require("./assets/images/IEEE.jpeg"),
+      imageAlt: "IEEE",
+      footerLink: [
+        {name: "Research Publication", url: "https://ieeexplore.ieee.org/document/8903947"},
       ]
     }
   ],
