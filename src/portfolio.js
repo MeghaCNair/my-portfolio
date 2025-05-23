@@ -24,7 +24,7 @@ const greeting = {
   subusername:"Megha Nair",
   title: "Hi all, I'm Megha",
   subTitle: emoji(
-    "I’m passionate about data — digging deep for insights, modeling the future, and visualizing it all in ways that drive action. Whether it’s Python, SQL, Power BI, or machine learning, I use the right tools to solve real problems."
+    "I'm passionate about data — digging deep for insights, modeling the future, and visualizing it all in ways that drive action. Whether it's Python, SQL, Power BI, or machine learning, I use the right tools to solve real problems."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -301,28 +301,43 @@ const achievementSection = {
   display: true // Set false to hide this section, defaults to true
 };
 
-// Blogs Section
-
-const blogSection = {
-  title: "Blogs",
-  subtitle:
-    "With Love for Developing cool stuff, I love to write and teach others what I have learnt.",
-  displayMediumBlogs: "true", // Set true to display fetched medium blogs instead of hardcoded ones
-  blogs: [
+// Academic Projects Section
+const academicProjects = {
+  title: "Academic Projects",
+  subtitle: "Projects completed during my academic journey",
+  projects: [
     {
-      url: "https://blog.usejournal.com/create-a-google-assistant-action-and-win-a-google-t-shirt-and-cloud-credits-4a8d86d76eae",
-      title: "Win a Google Assistant Tshirt and $200 in Google Cloud Credits",
-      description:
-        "Do you want to win $200 and Google Assistant Tshirt by creating a Google Assistant Action in less then 30 min?"
+      title: "SBA Loan Prediction",
+      subtitle: "Applied Machine Learning",
+      details: [
+        "Performed EDA on historical loan data and developed predictive models which achieved 85% accuracy in identifying loan defaults.",
+        "Leveraged SHAP values to enhance interpretability, enabling data-driven decisions for loan approvals and risk management."
+      ],
+      github: "https://github.com/yourusername/sba-loan-prediction",
+      presentation: "https://drive.google.com/your-presentation-link"
     },
     {
-      url: "https://medium.com/@saadpasta/why-react-is-the-best-5a97563f423e",
-      title: "Why REACT is The Best?",
-      description:
-        "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
+      title: "Emotion Detection Model",
+      subtitle: "Applied Natural Language Processing",
+      details: [
+        "Implemented Logistic Regression, LSTM architecture, and large language models to develop a robust emotion detection system",
+        "Achieved a 61% F1-macro score on unseen data for multi-label classification"
+      ],
+      github: "https://github.com/yourusername/emotion-detection",
+      presentation: "https://drive.google.com/your-presentation-link"
+    },
+    {
+      title: "Customer Churn Dashboard",
+      subtitle: "Business Analytics",
+      details: [
+        "Designed Power BI dashboards analyzing customer churn patterns, creating actionable reports for customer retention",
+        "Applied clustering algorithms using Scikit-Learn to segment customers and optimize retention strategies"
+      ],
+      github: "https://github.com/yourusername/churn-dashboard",
+      presentation: "https://drive.google.com/your-presentation-link"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: true
 };
 
 // Talks Sections
@@ -369,16 +384,16 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
-  number: "+92-0000000000",
-  email_address: "saadpasta70@gmail.com"
+    "Discuss an opportunity or just want to say hi? My Inbox is open for all.",
+  
+  email_address: "meghacnair96@gmail.com"
 };
 
 // Twitter Section
 
 const twitterDetails = {
   userName: "twitter", //Replace "twitter" with your twitter username without @
-  display: true // Set true to display this section, defaults to false
+  display: false // Set true to display this section, defaults to false
 };
 
 const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
@@ -395,7 +410,7 @@ export {
   openSource,
   bigProjects,
   achievementSection,
-  blogSection,
+  academicProjects,
   talkSection,
   podcastSection,
   contactInfo,

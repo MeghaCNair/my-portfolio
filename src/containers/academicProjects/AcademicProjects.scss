@@ -1,0 +1,54 @@
+@import "../../_globalColor";
+
+.academic-projects-header {
+  margin: 0 auto;
+  max-width: 90%;
+  padding-bottom: 30px;
+}
+
+.academic-projects-header-text {
+  font-size: 56px;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+.academic-projects-subtitle {
+  text-transform: uppercase;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.academic-projects-main-div {
+  display: flex;
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.academic-projects-text-div {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  width: 100%;
+}
+
+/* Media Query */
+@media (max-width: 1380px) {
+  .academic-projects-header-text {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .academic-projects-header-text {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .academic-projects-subtitle {
+    font-size: 16px;
+    line-height: normal;
+    text-align: center;
+  }
+} 

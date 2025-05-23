@@ -4,8 +4,43 @@ import AchievementCard from "../../components/achievementCard/AchievementCard";
 import {achievementSection} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 export default function Achievement() {
   const {isDark} = useContext(StyleContext);
+  
+  const settings = {
+    dots: true,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: false,
+    autoplaySpeed: 3000,
+    initialSlide: 0,
+    centerMode: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 0
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 0
+        }
+      }
+    ]
+  };
+
   if (!achievementSection.display) {
     return null;
   }
@@ -34,21 +69,24 @@ export default function Achievement() {
             </p>
           </div>
           <div className="achievement-cards-div">
-            {achievementSection.achievementsCards.map((card, i) => {
-              return (
-                <AchievementCard
-                  key={i}
-                  isDark={isDark}
-                  cardInfo={{
-                    title: card.title,
-                    description: card.subtitle,
-                    image: card.image,
-                    imageAlt: card.imageAlt,
-                    footer: card.footerLink
-                  }}
-                />
-              );
-            })}
+            <Slider {...settings}>
+              {achievementSection.achievementsCards.map((card, i) => {
+                return (
+                  <div key={i} className="achievement-card-slider">
+                    <AchievementCard
+                      isDark={isDark}
+                      cardInfo={{
+                        title: card.title,
+                        description: card.subtitle,
+                        image: card.image,
+                        imageAlt: card.imageAlt,
+                        footer: card.footerLink
+                      }}
+                    />
+                  </div>
+                );
+              })}
+            </Slider>
           </div>
         </div>
       </div>

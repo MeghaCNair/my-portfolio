@@ -2,29 +2,28 @@
 
 .experience-card {
   position: relative;
-  background-color: $lightBackground2;
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  //background: linear-gradient(135deg, rgba(88, 28, 135, 0.95) 0%, rgba(67, 20, 102, 0.95) 100%);
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  border: 1px solid $lightBorder1;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: translateY(-7px);
+    box-shadow: 0px 20px 40px -15px rgba(0, 0, 0, 0.3);
+    border-color: rgba(255, 255, 255, 0.2);
+  }
 }
 
 .experience-card-dark {
-  position: relative;
-  background-color: $darkBackground;
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
-  border-radius: 10px;
-  border: 1px solid $lightBorder1;
-}
-
-.experience-card:hover {
-  box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  @extend .experience-card;
 }
 
 .experience-banner {
   background-position: center;
   background-repeat: no-repeat;
   background-size: 150%;
-  background: $experienceCardBannerLG;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
   border-radius: 10px 10px 0px 0px;
   -webkit-filter: blur(0px);
   -moz-filter: blur(0px);
@@ -39,7 +38,7 @@
 
 .experience-blurred_div {
   position: absolute;
-  background: $experienceCardBlurredDivLG;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.2));
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
@@ -68,13 +67,14 @@
   text-align: center;
   padding: 1.5rem;
   margin: 0;
-  color: $lightBackground1;
+  color: #ffffff;
   font-size: 25px;
   text-align: center;
   font-weight: 700;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .experience-roundedimg {
@@ -87,25 +87,24 @@
   margin-right: auto;
   width: 8rem;
   height: 8rem;
-  box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.3);
   border-radius: 50%;
+  border: 0.3rem solid rgba(255, 255, 255, 0.2);
 }
 
 .experience-text-role {
   text-align: center;
-  color: $textColor;
+  color: #554e4e;
   font-weight: 700;
   font-size: 25px;
   margin: 0px;
   padding-top: 1.5rem;
   line-height: normal;
 }
-.dark-mode-text {
-  color: $textColorDark !important;
-}
+
 .experience-text-date {
   text-align: center;
-  color: $textColor;
+  color: #757377;
   font-size: 20px;
   margin: 0px;
   padding-top: 1rem;
@@ -114,6 +113,9 @@
 
 .experience-text-desc {
   text-align: center;
+  color: #e2c4ff;
+  opacity: 0.9;
+  margin: 0px 10px;
 }
 
 .experience-text-details {
@@ -121,8 +123,78 @@
   margin-top: 2rem;
 }
 
-/* Media Query */
+/* Dropdown Styles */
+.experience-bullets-div {
+  margin-top: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
 
+  &:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+}
+
+.experience-bullets-header {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  padding: 1rem;
+  color: #959292;
+
+  span {
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+
+  i {
+    color: #959292;
+    transition: transform 0.3s ease;
+    margin:0px 10px;
+  }
+}
+
+.experience-bullets-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+
+  &.expanded {
+    max-height: 500px;
+    padding: 0 1rem 1rem 1rem;
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.5rem;
+    list-style-type: none;
+
+    li {
+      color: #e2c4ff;
+      font-size: 1rem;
+      margin-bottom: 0.5rem;
+      position: relative;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: -1.2rem;
+        top: 0.5rem;
+        width: 6px;
+        height: 6px;
+        background: linear-gradient(135deg, #ffd700 0%, #ffa500 100%);
+        border-radius: 50%;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+/* Media Query */
 @media (max-width: 1380px) {
   .experience-text-role {
     padding-top: 0.5rem;
@@ -152,5 +224,11 @@
   }
   .experience-text-desc {
     font-size: 16px;
+  }
+  .experience-bullets-header span {
+    font-size: 1rem;
+  }
+  .experience-bullets-content ul li {
+    font-size: 0.9rem;
   }
 }

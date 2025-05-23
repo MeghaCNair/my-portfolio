@@ -205,7 +205,7 @@ Insert your Twitter username in `portfolio.js` to show your recent activity on y
 
 ```javascript
 const twitterDetails = {
-  userName : "Your Twitter Username"
+ 
 };
 ```
 Note: Don't use `@` symbol when adding username.

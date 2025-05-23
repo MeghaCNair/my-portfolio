@@ -2,7 +2,7 @@ import React, {useState, createRef} from "react";
 import "./ExperienceCard.scss";
 import ColorThief from "colorthief";
 
-export default function ExperienceCard({cardInfo, isDark}) {
+export default function ExperienceCard({cardInfo, isDark, isExpanded, onExpand}) {
   const [colorArrays, setColorArrays] = useState([]);
   const imgRef = createRef();
 
@@ -75,9 +75,19 @@ export default function ExperienceCard({cardInfo, isDark}) {
         >
           {cardInfo.desc}
         </p>
-        <ul>
-          <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
-        </ul>
+        <div className="experience-bullets-div" onClick={onExpand}>
+          <div className="experience-bullets-header">
+            <span className={isDark ? "dark-mode-text" : ""}>
+              Key Responsibilities
+            </span>
+            <i className={`fas fa-chevron-${isExpanded ? 'up' : 'down'}`}></i>
+          </div>
+          <div className={`experience-bullets-content ${isExpanded ? 'expanded' : ''}`}>
+            <ul>
+              <GetDescBullets descBullets={cardInfo.descBullets} isDark={isDark} />
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );

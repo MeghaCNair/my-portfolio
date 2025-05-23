@@ -1,4 +1,4 @@
-import React, {useContext} from "react";
+import React, {useContext, useState} from "react";
 import "./WorkExperience.scss";
 import ExperienceCard from "../../components/experienceCard/ExperienceCard";
 import {workExperiences} from "../../portfolio";
@@ -7,6 +7,12 @@ import StyleContext from "../../contexts/StyleContext";
 
 export default function WorkExperience() {
   const {isDark} = useContext(StyleContext);
+  const [expandedId, setExpandedId] = useState(null);
+
+  const handleExpand = (id) => {
+    setExpandedId(expandedId === id ? null : id);
+  };
+
   if (workExperiences.display) {
     return (
       <div id="experience">
@@ -20,6 +26,8 @@ export default function WorkExperience() {
                     <ExperienceCard
                       key={i}
                       isDark={isDark}
+                      isExpanded={expandedId === i}
+                      onExpand={() => handleExpand(i)}
                       cardInfo={{
                         company: card.company,
                         desc: card.desc,
