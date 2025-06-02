@@ -30,6 +30,7 @@ export default function SoftwareSkill() {
                       {skillCategory.listOfSkills.map((skill, j) => (
                         <div key={j} className="skill-item">
                           <span>{skill}</span>
+                          <div className="tooltip">{skill}</div>
                         </div>
                       ))}
                     </div>

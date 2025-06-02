@@ -24,12 +24,24 @@ export default function AchievementCard({cardInfo, isDark}) {
         <h5 className={isDark ? "dark-mode card-title" : "card-title"} data-title={cardInfo.title}>
           {cardInfo.title}
         </h5>
-        <p className={isDark ? "dark-mode card-subtitle" : "card-subtitle"}>
+        {/* <p className={isDark ? "dark-mode card-subtitle" : "card-subtitle"}>
           {cardInfo.description}
-        </p>
+        </p> */}
       </div>
       <div className="certificate-card-footer">
         {cardInfo.footer.map((v, i) => {
+          if (!v.url) {
+            return (
+              <span
+                key={i}
+                className={
+                  isDark ? "dark-mode certificate-tag in-progress" : "certificate-tag in-progress"
+                }
+              >
+                In Progress
+              </span>
+            );
+          }
           return (
             <span
               key={i}

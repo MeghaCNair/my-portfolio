@@ -15,14 +15,11 @@
 
 .greeting-main {
   display: flex;
+  align-items: center;
 }
 
 .subTitle {
   color: $subTitle !important;
-}
-
-.greeting-main {
-  display: flex;
 }
 
 .greeting-main > * {
@@ -46,20 +43,30 @@
   font-size: 70px;
   line-height: 1.1;
   color: $textColor !important;
+  text-align: left;
 }
 
 .greeting-text-p {
   font-size: 30px;
   line-height: 40px;
+  margin-top: 1rem;
+  text-align: left;
 }
 
-.greeting-image-div > img {
-  max-width: 100%;
-  height: auto;
-}
-.greeting-image-div > div {
-  width: 100% !important;
-  height: auto;
+.greeting-image-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  > img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  > div {
+    width: 100% !important;
+    height: auto;
+  }
 }
 .wave-emoji {
   animation-duration: 1.8s;
@@ -104,15 +111,16 @@
 }
 @media (max-width: 768px) {
   .button-greeting-div {
-    justify-content: space-around;
+    justify-content: center;
   }
   .greeting-text {
     font-size: 30px;
     text-align: center;
+    margin-top: 0;
   }
   .greeting-text-p {
     font-size: 16px;
-    line-height: normal;
+    line-height: 1.5;
     text-align: center;
   }
   .greeting-main {
@@ -121,10 +129,34 @@
   .greeting-image-div {
     height: 256px;
   }
+  .main {
+    margin-top: 2rem;
+  }
+  .greet-main {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .greeting-text {
+    font-size: 25px;
+    margin-bottom: 0.5rem;
+  }
+  .greeting-text-p {
+    font-size: 15px;
+  }
+  .greeting-image-div {
+    height: 220px;
+  }
 }
 
 @media (max-width: 320px) {
   .main {
-    width: auto;
+    width: 95%;
+    padding: 15px 10px;
+  }
+  .greet-main {
+    width: 95%;
+    padding: 15px 10px;
   }
 }

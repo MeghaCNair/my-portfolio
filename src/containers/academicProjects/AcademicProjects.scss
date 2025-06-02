@@ -20,17 +20,15 @@
 }
 
 .academic-projects-main-div {
-  display: flex;
   width: 90%;
   margin: 0 auto;
   max-width: 1400px;
 }
 
 .academic-projects-text-div {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 32px;
   width: 100%;
+  margin: 0 auto;
+  padding: 20px 0;
 }
 
 /* Media Query */
@@ -50,5 +48,10 @@
     font-size: 16px;
     line-height: normal;
     text-align: center;
+  }
+
+  .academic-projects-main-div {
+    width: 100%;
+    padding: 0 20px;
   }
 } 

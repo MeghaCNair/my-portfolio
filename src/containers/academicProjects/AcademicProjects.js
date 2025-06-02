@@ -31,13 +31,10 @@ export default function AcademicProjects() {
         </div>
         <div className="academic-projects-main-div">
           <div className="academic-projects-text-div">
-            {academicProjects.projects.map((project, i) => (
-              <AcademicProjectCard
-                key={i}
-                project={project}
-                isDark={isDark}
-              />
-            ))}
+            <AcademicProjectCard
+              projects={academicProjects.projects}
+              isDark={isDark}
+            />
           </div>
         </div>
       </div>

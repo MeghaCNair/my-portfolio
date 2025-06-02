@@ -222,6 +222,18 @@
     background: $buttonHover;
     transform: translateY(-2px);
   }
+
+  &.in-progress {
+    background: linear-gradient(135deg, #ffd700 0%, #ffa500 100%);
+    color: #1a1a1a;
+    cursor: default;
+    font-weight: 600;
+    
+    &:hover {
+      background: linear-gradient(135deg, #ffd700 0%, #ffa500 100%);
+      transform: none;
+    }
+  }
 }
 
 .dark-mode {
@@ -232,6 +244,17 @@
     &:hover {
       background: rgba(255, 255, 255, 0.2);
       border-color: rgba(255, 255, 255, 0.3);
+    }
+
+    &.in-progress {
+      background: linear-gradient(135deg, #ffd700 0%, #ffa500 100%);
+      color: #1a1a1a;
+      border: none;
+      
+      &:hover {
+        background: linear-gradient(135deg, #ffd700 0%, #ffa500 100%);
+        border: none;
+      }
     }
   }
 }
@@ -254,7 +277,6 @@
   .card-title {
     font-size: 1.3rem;
     margin: 10px 0 8px 0;
-    height: 3.64rem;
   }
 
   .card-subtitle {

@@ -20,7 +20,7 @@ const illustration = {
 };
 
 const greeting = {
-  username: "Megha Chandrasekharan Nair",
+  username: "Megha C Nair",
   subusername:"Megha Nair",
   title: "Hi all, I'm Megha",
   subTitle: emoji(
@@ -71,31 +71,30 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-chart-pie"
     },
     {
+      skillName: "Aritificial Intelligence",
+      fontAwesomeClassname: "fas fa-robot",
+      listOfSkills: ["ML", "NLP","LLM","DL","RAG"]
+    },
+    {
       skillName: "Statististical Analysis",
       fontAwesomeClassname: "fas fa-chart-line",
-      listOfSkills: ["Statistics", "Hypothesis Testing"]
+      listOfSkills: ["Statistics", "Hypothesis Testing","A/B Testing","Causal Inference"]
+    },
+    {
+      skillName: "DBMS/Big Data",
+      fontAwesomeClassname: "fas fa-database",
+      listOfSkills: ["SQL", "NoSQL","MongoDB","PySpark","Hive","Hadoop","Spark"]
+    },
+    {
+      skillName: "Cloud Technologies",
+      fontAwesomeClassname: "fas fa-cloud",
+      listOfSkills: ["AWS", "Azure","GCP"]
     },
     {
       skillName: "Front end development",
       listOfSkills: ["html-5", "css3", "JavaScript", "ReactJS"],
       fontAwesomeClassname: "fas fa-laptop-code"
     },
-    {
-      skillName: "DBMS/Big Data",
-      fontAwesomeClassname: "fas fa-database",
-      listOfSkills: ["SQL", "NoSQL","Hive","Hadoop","Spark"]
-    },
-    {
-      skillName: "Aritificial Intelligence",
-      fontAwesomeClassname: "fas fa-robot",
-      listOfSkills: ["Machine Learning", "NLP","Large Language Models","Deep Learning"]
-    },
-    {
-      skillName: "Cloud Technologies",
-      fontAwesomeClassname: "fas fa-cloud",
-      listOfSkills: ["AWS", "Azure"]
-    },
-
     {
       skillName: "Project Management",
       fontAwesomeClassname: "fas fa-tasks",
@@ -253,6 +252,32 @@ const achievementSection = {
 
   achievementsCards: [
     {
+      title: "Business Analytics and Data Mining",
+      subtitle:
+        "",
+      image: require("./assets/images/UTDLOGO.png"),
+      imageAlt: "data mining graduate certificate",
+      footerLink: [
+        {
+          name: "Certification",
+          url: ""
+        }
+      ]
+    },
+    {
+      title: "AWS Cloud Practitioner",
+      subtitle:
+        "",
+      image: require("./assets/images/AWSCCP.png"),
+      imageAlt: "data mining graduate certificate",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://www.credly.com/badges/c7b0e042-92b0-4bdf-9c04-6a0fa6659caf/public_url"
+        }
+      ]
+    },
+    {
       title: "Microsoft Azure Fundamentals - AZ900",
       subtitle:
         "",
@@ -306,39 +331,76 @@ const academicProjects = {
   title: "Academic Projects",
   subtitle: "Projects completed during my academic journey",
   projects: [
+    ,
     {
-      title: "SBA Loan Prediction",
+      title: "JobAssist – AI-Powered Career Platform",
+      subtitle: "AI in Action Hackathon",
+      techStack: ["FastAPI", "MongoDB Atlas", "React", "GCP (Cloud Run, GCS)", "Gemini API"],
+      details: [
+        "Designed and developed a personalized job recommendation platform using LLMs and RAG techniques.",
+        "Implemented resume upload, MongoDB-based profile management, and job matching via vector search.",
+        "Integrated GCP services for scalable deployment and Gemini for intelligent chat capabilities."
+      ],
+      github: "https://github.com/MeghaCNair/JobAssist",
+      inProgress: true
+    },
+    {
+      title: "Sentiment Analysis using LLMs",
+      subtitle: "Natural Language Processing",
+      techStack: ["Python", "Hugging Face", "BERT", "Gemma", "Logistic Regression", "LSTM"],
+      details: [
+        "Built a multi-label emotion classification pipeline using LLMs and deep learning models.",
+        "Achieved 61% F1-macro score on unseen test data across 11 emotion classes.",
+        "Used Hugging Face Transformers (BERT, Llama, Gemma) for robust feature extraction."
+      ],
+      github: "https://github.com/MeghaCNair/SentimentAnalysisusingLLMs"
+    },
+    {
+      title: "Predictive Modeling with ML",
       subtitle: "Applied Machine Learning",
+      techStack: ["Python", "Scikit-learn", "XGBoost", "Logistic Regression", "SHAP"],
       details: [
-        "Performed EDA on historical loan data and developed predictive models which achieved 85% accuracy in identifying loan defaults.",
-        "Leveraged SHAP values to enhance interpretability, enabling data-driven decisions for loan approvals and risk management."
+        "Developed models for SBA loan default prediction with 85% accuracy.",
+        "Utilized SHAP values for model interpretability and stakeholder understanding.",
+        "Implemented hyperparameter tuning, feature selection, and evaluation pipelines."
       ],
-      github: "https://github.com/yourusername/sba-loan-prediction",
-      presentation: "https://drive.google.com/your-presentation-link"
+      github: "https://github.com/MeghaCNair/MLPredictiveModels"
     },
     {
-      title: "Emotion Detection Model",
-      subtitle: "Applied Natural Language Processing",
+      title: "Big Data Analysis",
+      subtitle: "Big Data",
+      techStack: ["Hadoop","PySpark", "Hive", "Flume", "Sqoop"],
       details: [
-        "Implemented Logistic Regression, LSTM architecture, and large language models to develop a robust emotion detection system",
-        "Achieved a 61% F1-macro score on unseen data for multi-label classification"
+        "Ingested and processed large volume datasets using Hadoop ecosystem tools.",
+        "Extracted business insights using Hive and PySparkqueries on cleaned data."
       ],
-      github: "https://github.com/yourusername/emotion-detection",
-      presentation: "https://drive.google.com/your-presentation-link"
+      github: "https://github.com/MeghaCNair/WorkingWithBigData"
     },
     {
-      title: "Customer Churn Dashboard",
-      subtitle: "Business Analytics",
+      title: "Image Classification and Text Generation",
+      subtitle: "Deep Learning",
+      techStack: ["Python", "PyTorch", "CNN", "RNN", "Transformers"],
       details: [
-        "Designed Power BI dashboards analyzing customer churn patterns, creating actionable reports for customer retention",
-        "Applied clustering algorithms using Scikit-Learn to segment customers and optimize retention strategies"
+        "Built deep learning models for image classification and text generation",
+        "Used CNNs for images and BPE,RNNS for text"
       ],
-      github: "https://github.com/yourusername/churn-dashboard",
-      presentation: "https://drive.google.com/your-presentation-link"
+      github: "https://github.com/MeghaCNair/DeepLearning_Image_Text"
+    },
+    {
+      title: "AWS-Based Supply Chain Optimization",
+      subtitle: "Cloud Simulation Project",
+      techStack: ["AWS Lambda", "S3", "API Gateway", "CloudWatch", "DynamoDB"],
+      details: [
+        "Proposed a tariff-response logistics system using AWS services.",
+        "Used API Gateway and Lambda for real-time event-driven architecture.",
+        "Secure storage and monitoring using S3, DynamoDB, and CloudWatch."
+      ],
+      github: "https://github.com/MeghaCNair/AWSForSupplyChain"
     }
   ],
   display: true
 };
+
 
 // Talks Sections
 
