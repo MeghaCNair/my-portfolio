@@ -79,12 +79,13 @@ function Header() {
           <li>
             <a href="#contact">Contact Me</a>
           </li>
+          {/* Temporarily hiding dark mode toggle
           <li>
-            {/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
             <a>
               <ToggleSwitch />
             </a>
           </li>
+          */}
         </ul>
       </header>
     </Headroom>
