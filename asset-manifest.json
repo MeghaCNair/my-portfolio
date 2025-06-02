@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/my-portfolio/static/css/main.97c51723.css",
+    "main.js": "/my-portfolio/static/js/main.85ad40e9.js",
+    "static/css/64.bba8fa55.chunk.css": "/my-portfolio/static/css/64.bba8fa55.chunk.css",
+    "static/js/64.dcb0c397.chunk.js": "/my-portfolio/static/js/64.dcb0c397.chunk.js",
+    "static/css/769.b3cbb36b.chunk.css": "/my-portfolio/static/css/769.b3cbb36b.chunk.css",
+    "static/js/769.57f883b9.chunk.js": "/my-portfolio/static/js/769.57f883b9.chunk.js",
+    "static/media/Sapient.png": "/my-portfolio/static/media/Sapient.1c4da9b0b9ae37ac67f2.png",
+    "static/media/Montserrat-Regular.ttf": "/my-portfolio/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/azure-icon.png": "/my-portfolio/static/media/azure-icon.e50a8923ec3fe09e6a56.png",
+    "static/media/VTU.png": "/my-portfolio/static/media/VTU.bcfa08660663f1906d75.png",
+    "static/media/Agustina.woff": "/my-portfolio/static/media/Agustina.eb0c59dda4cc308cba96.woff",
+    "static/media/manOnTable.svg": "/my-portfolio/static/media/manOnTable.8f117eb207e57ed8f89d67d595aceb45.svg",
+    "static/media/AWSCCP.png": "/my-portfolio/static/media/AWSCCP.1d4d9fa250269a5b5067.png",
+    "static/media/contactMailDark.svg": "/my-portfolio/static/media/contactMailDark.1db650d351729a0f17b4e3104e6a7b7a.svg",
+    "static/media/developerActivity.svg": "/my-portfolio/static/media/developerActivity.2c0445cae86f4243433a2f5a22b2c031.svg",
+    "static/media/skill.svg": "/my-portfolio/static/media/skill.35a147662ab0a1d15e579690446e0258.svg",
+    "static/media/resume.pdf": "/my-portfolio/static/media/resume.f0f733dd3cd732b39262.pdf",
+    "static/media/saayaHealthLogo.webp": "/my-portfolio/static/media/saayaHealthLogo.60b27d1f184fadfce43a.webp",
+    "static/media/nextuLogo.webp": "/my-portfolio/static/media/nextuLogo.e033dbfa4c58c0a906aa.webp",
+    "index.html": "/my-portfolio/index.html",
+    "static/media/slick.svg": "/my-portfolio/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/my-portfolio/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/my-portfolio/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/my-portfolio/static/media/slick.295183786cd8a1389865.woff",
+    "static/media/talksCardBack.svg": "/my-portfolio/static/media/talksCardBack.73ed1545d58273ba64b0.svg",
+    "main.97c51723.css.map": "/my-portfolio/static/css/main.97c51723.css.map",
+    "main.85ad40e9.js.map": "/my-portfolio/static/js/main.85ad40e9.js.map",
+    "64.bba8fa55.chunk.css.map": "/my-portfolio/static/css/64.bba8fa55.chunk.css.map",
+    "64.dcb0c397.chunk.js.map": "/my-portfolio/static/js/64.dcb0c397.chunk.js.map",
+    "769.b3cbb36b.chunk.css.map": "/my-portfolio/static/css/769.b3cbb36b.chunk.css.map",
+    "769.57f883b9.chunk.js.map": "/my-portfolio/static/js/769.57f883b9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97c51723.css",
+    "static/js/main.85ad40e9.js"
+  ]
+}
