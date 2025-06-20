@@ -248,7 +248,7 @@ const bigProjects = {
 const achievementSection = {
   title: emoji("Achievements And Certifications 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "",
 
   achievementsCards: [
     {
@@ -329,7 +329,7 @@ const achievementSection = {
 // Academic Projects Section
 const academicProjects = {
   title: "Academic Projects",
-  subtitle: "Projects completed during my academic journey",
+  subtitle: "",
   projects: [
     ,
     {
@@ -342,6 +342,7 @@ const academicProjects = {
         "Integrated GCP services for scalable deployment and Gemini for intelligent chat capabilities."
       ],
       github: "https://github.com/MeghaCNair/JobAssist",
+      demoUrl: "https://jobassist-frontend-megha-2025.web.app/login",
       inProgress: true
     },
     {

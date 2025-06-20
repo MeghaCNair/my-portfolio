@@ -5,12 +5,14 @@
   padding: 20px 10px;
   margin: 0px auto;
   margin-top: 4rem;
+  overflow-x: hidden;
 }
 .greet-main {
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
   margin-top: 2rem;
+  overflow-x: hidden;
 }
 
 .greeting-main {
@@ -112,6 +114,9 @@
 @media (max-width: 768px) {
   .button-greeting-div {
     justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
   }
   .greeting-text {
     font-size: 30px;
@@ -138,6 +143,9 @@
 }
 
 @media (max-width: 480px) {
+  .button-greeting-div {
+    gap: 25px;
+  }
   .greeting-text {
     font-size: 25px;
     margin-bottom: 0.5rem;
@@ -154,9 +162,11 @@
   .main {
     width: 95%;
     padding: 15px 10px;
+    overflow-x: hidden;
   }
   .greet-main {
     width: 95%;
     padding: 15px 10px;
+    overflow-x: hidden;
   }
 }

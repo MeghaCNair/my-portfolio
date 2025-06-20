@@ -130,5 +130,21 @@
   .education-text-bullets > ul {
     max-width: 80%;
     margin: auto;
+    text-align: left;
+    padding-left: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .education-text-bullets > ul {
+    max-width: 90%;
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .education-text-bullets > ul {
+    max-width: 95%;
+    padding-left: 0.8rem;
   }
 }

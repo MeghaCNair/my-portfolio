@@ -145,6 +145,14 @@ export default function AcademicProjectCard({ projects, isDark }) {
                       <i className="fab fa-github"></i> View Code
                     </button>
                   )}
+                  {project.demoUrl && (
+                    <button
+                      className={`project-button ${isDark ? "dark-mode" : ""}`}
+                      onClick={() => openUrlInNewTab(project.demoUrl, "Demo")}
+                    >
+                      <i className="fas fa-external-link-alt"></i> Try it out
+                    </button>
+                  )}
                   {project.presentation && (
                     <button
                       className={`project-button ${isDark ? "dark-mode" : ""}`}
