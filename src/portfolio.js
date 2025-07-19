@@ -343,7 +343,6 @@ const academicProjects = {
       ],
       github: "https://github.com/MeghaCNair/JobAssist",
       demoUrl: "https://jobassist-frontend-megha-2025.web.app/login",
-      inProgress: true
     },
     {
       title: "Sentiment Analysis using LLMs",

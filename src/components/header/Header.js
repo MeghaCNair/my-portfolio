@@ -24,7 +24,7 @@ function Header() {
   return (
     <Headroom>
       <header className="header">
-        <a href="/" className="logo">
+        <a href="/my-portfolio" className="logo">
           <span className="grey-color"> &lt;</span>
           <span className="logo-name">{greeting.subusername}</span>
           <span className="grey-color">/&gt;</span>

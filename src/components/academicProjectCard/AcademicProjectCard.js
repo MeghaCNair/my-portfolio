@@ -31,6 +31,10 @@ export default function AcademicProjectCard({ projects, isDark }) {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: true,
+    beforeChange: () => {
+      // Collapse all expanded cards when navigating
+      setExpandedCards({});
+    },
     responsive: [
       {
         breakpoint: 1920,
@@ -38,7 +42,10 @@ export default function AcademicProjectCard({ projects, isDark }) {
           slidesToShow: 4,
           slidesToScroll: 1,
           dots: true,
-          arrows: true
+          arrows: true,
+          beforeChange: () => {
+            setExpandedCards({});
+          }
         }
       },
       {
@@ -47,7 +54,10 @@ export default function AcademicProjectCard({ projects, isDark }) {
           slidesToShow: 3,
           slidesToScroll: 1,
           dots: true,
-          arrows: true
+          arrows: true,
+          beforeChange: () => {
+            setExpandedCards({});
+          }
         }
       },
       {
@@ -56,7 +66,10 @@ export default function AcademicProjectCard({ projects, isDark }) {
           slidesToShow: 2,
           slidesToScroll: 1,
           dots: true,
-          arrows: true
+          arrows: true,
+          beforeChange: () => {
+            setExpandedCards({});
+          }
         }
       },
       {
@@ -65,7 +78,10 @@ export default function AcademicProjectCard({ projects, isDark }) {
           slidesToShow: 2,
           slidesToScroll: 1,
           dots: true,
-          arrows: true
+          arrows: true,
+          beforeChange: () => {
+            setExpandedCards({});
+          }
         }
       },
       {
@@ -74,7 +90,10 @@ export default function AcademicProjectCard({ projects, isDark }) {
           slidesToShow: 1,
           slidesToScroll: 1,
           dots: true,
-          arrows: true
+          arrows: true,
+          beforeChange: () => {
+            setExpandedCards({});
+          }
         }
       },
       {
@@ -86,7 +105,10 @@ export default function AcademicProjectCard({ projects, isDark }) {
           arrows: true,
           centerMode: false,
           centerPadding: '0',
-          adaptiveHeight: true
+          adaptiveHeight: true,
+          beforeChange: () => {
+            setExpandedCards({});
+          }
         }
       }
     ]
