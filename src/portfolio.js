@@ -22,9 +22,9 @@ const illustration = {
 const greeting = {
   username: "Megha C Nair",
   subusername:"Megha Nair",
-  title: "Hi all, I'm Megha",
+  title: "Hello, I'm Megha",
   subTitle: emoji(
-    "I'm passionate about data — digging deep for insights, modeling the future, and visualizing it all in ways that drive action. Whether it's Python, SQL, Power BI, or machine learning, I use the right tools to solve real problems."
+    "Fueling Action with Data's Depths and AI's Frontiers."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -122,17 +122,17 @@ const educationInfo = {
       duration: "January 2024 - December 2025",
       desc: "Teaching Assistant and Student Ambassador for the program.",
       descBullets: [
-        "Took courses covering Statistics, Business Analytics, Machine Learning, Predictive Modeling, Business Optimizations, Natural Language Processing, Big Data, Cloud Technologies, Time Series Analysis, Professional Development"
+        "Key courses include Statistics, Business Analytics, Machine Learning, Predictive Modeling, Business Optimizations, Natural Language Processing, Big Data, Cloud Technologies, Deep learning, and AI"
       ]
     },
     {
       schoolName: "Visvesvaraya Technological University",
       logo: require("./assets/images/VTU.png"),
       subHeader: "Bachelor of Technology in Electronics and Communication Engineering",
-      duration: "Auagust 2014 - July 2018",
+      duration: "August 2014 - July 2018",
       desc: "Published a research paper on 'Target Doppler Analysis using Compressive Sensing' in IEEE.",
       descBullets: [
-        "Took courses covering operating systems, digital signal processing, digital communication, VLSI design, microprocessors, and microcontrollers."]
+        "Key courses include operating systems, digital signal processing, digital communication, VLSI design, microprocessors, and microcontrollers."]
     }
   ]
 };

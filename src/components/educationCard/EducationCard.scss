@@ -32,19 +32,18 @@
 
 .education-text-school {
   margin: 0;
-  font-size: 28px;
+  font-size: 1.8rem;
   font-weight: 700;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  height: 27px;
 }
 
 .education-roundedimg {
   object-fit: cover;
   margin-right: 2rem;
-  width: 6rem;
-  height: 6rem;
+  width: calc(100vw * 0.08) !important;
+  height: calc(100vw * 0.08) !important;
   box-shadow: 0 0.5rem 1rem $lightBoxShadowDarker;
   border-radius: 50%;
 }
@@ -56,7 +55,7 @@
 .education-text-subHeader {
   color: $textColor;
   font-weight: 700;
-  font-size: 19px;
+  font-size: 1.2rem;
   margin: 0px;
   padding-top: 0.8rem;
   line-height: normal;
@@ -64,7 +63,7 @@
 
 .education-text-duration {
   color: $titleColor;
-  font-size: 19px;
+  font-size: 1rem;
   margin: 0px;
   padding-top: 0.5rem;
 }
@@ -93,14 +92,14 @@
   }
   .education-text-subHeader {
     padding-top: 0.5rem;
-    font-size: 16px;
+    //font-size: 16px;
   }
   .education-text-school {
     font-size: 20px;
     height: 23px;
   }
   .education-text-duration {
-    font-size: 16px;
+    //font-size: 16px;
   }
   .education-roundedimg {
     width: 4rem;

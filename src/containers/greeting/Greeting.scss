@@ -46,6 +46,9 @@
   line-height: 1.1;
   color: $textColor !important;
   text-align: left;
+  text-align: left;
+  font-family: cursive;
+  font-style: italic;
 }
 
 .greeting-text-p {
@@ -53,6 +56,7 @@
   line-height: 40px;
   margin-top: 1rem;
   text-align: left;
+  font-family:"Montserrat"
 }
 
 .greeting-image-div {
@@ -67,7 +71,7 @@
   
   > div {
     width: 100% !important;
-    height: auto;
+    height: 100% !important;
   }
 }
 .wave-emoji {
@@ -103,6 +107,41 @@
 }
 
 /* Media Query */
+@media (min-width: 1600px) {
+  .greeting-text {
+    font-size: 85px;
+    line-height: 1.1;
+  }
+  .greeting-text-p {
+    font-size: 35px;
+    line-height: 1.4;
+  }
+  .button-greeting-div {
+    margin-top: 50px;
+  }
+  .main {
+    max-width: 1400px;
+  }
+  .greet-main {
+    max-width: 1400px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .greeting-text {
+    font-size: 95px;
+  }
+  .greeting-text-p {
+    font-size: 40px;
+  }
+  .main {
+    max-width: 1600px;
+  }
+  .greet-main {
+    max-width: 1600px;
+  }
+}
+
 @media (max-width: 1380px) {
   .greeting-text {
     font-size: 50px;

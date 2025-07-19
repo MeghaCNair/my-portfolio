@@ -22,6 +22,10 @@
   padding: 0 20px;
   box-sizing: border-box;
 }
+.splash-animation-container > div{
+  width:100% !important;
+  height:100% !important;
+}
 
 .splash-title {
   font-family: "Agustina Regular", cursive;

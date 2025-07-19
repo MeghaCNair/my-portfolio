@@ -48,3 +48,14 @@
     font-size: 16px;
   }
 }
+@media (min-width: 1920px) {
+  .education-section {
+      max-width: 1600px;
+  }
+  .education-heading {
+    font-size: 80px;
+  }
+  .education-text-subtitle {
+    font-size: 22px;
+  }
+}

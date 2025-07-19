@@ -17,9 +17,7 @@
 }
 
 .achievement-main-div {
-  width: 90%;
   margin: 0 auto;
-  max-width: 1400px;
 }
 
 .achievement-header {
@@ -153,6 +151,26 @@
 }
 
 // Responsive styles
+@media (min-width: 1600px) {
+  .achievement-heading {
+    font-size: 70px;
+  }
+  .achievement-subtitle {
+    font-size: 18px;
+  }
+  
+}
+
+@media (min-width: 1920px) {
+  .achievement-heading {
+    font-size: 80px;
+  }
+  .achievement-subtitle {
+    font-size: 20px;
+  }
+  
+}
+
 @media (max-width: 1380px) {
   .achievement-heading {
     font-size: 40px;
@@ -203,4 +221,7 @@
       right: 5px;
     }
   }
+}
+.certificate-detail-div h5{
+  margin-bottom: 20px;
 }

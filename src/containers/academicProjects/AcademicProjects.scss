@@ -2,7 +2,6 @@
 
 .academic-projects-header {
   margin: 0 auto;
-  max-width: 90%;
   padding-bottom: 30px;
 }
 
@@ -20,9 +19,8 @@
 }
 
 .academic-projects-main-div {
-  width: 90%;
   margin: 0 auto;
-  max-width: 1400px;
+
 }
 
 .academic-projects-text-div {
@@ -32,6 +30,26 @@
 }
 
 /* Media Query */
+@media (min-width: 1600px) {
+  .academic-projects-header-text {
+    font-size: 70px;
+  }
+  .academic-projects-subtitle {
+    font-size: 18px;
+  }
+ 
+}
+
+@media (min-width: 1920px) {
+  .academic-projects-header-text {
+    font-size: 80px;
+  }
+  .academic-projects-subtitle {
+    font-size: 20px;
+  }
+ 
+}
+
 @media (max-width: 1380px) {
   .academic-projects-header-text {
     font-size: 40px;

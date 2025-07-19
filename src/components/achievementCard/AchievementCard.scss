@@ -88,7 +88,6 @@
   padding: 1.5rem;
   border-radius: 16px;
   border: 1px solid rgba(211, 211, 211, 0.2);
-  height: 340px;
   display: flex;
   flex-direction: column;
   transition: all 0.3s ease;
@@ -262,7 +261,6 @@
 @media (max-width: 768px) {
   .certificate-card {
     padding: 1.25rem;
-    height: 320px;
   }
 
   .certificate-image-div {

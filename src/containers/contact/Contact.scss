@@ -42,14 +42,12 @@
 }
 
 
-.contact-image-div > img {
-  max-width: 100%;
-  height: auto;
-  margin-left: 1.5rem;
-  margin-top: -4rem;
-}
 
-/* Media Query */
+.contact-image-div  > div{
+ width:100% !important;
+ height:100% !important;
+
+ } /* Media Query */
 @media (max-width: 1380px), (max-width: 768px) {
   .contact-title {
     font-size: 56px;

@@ -23,6 +23,33 @@
 
 /* Media Query */
 
+@media (min-width: 1600px) {
+  .experience-heading {
+    font-size: 70px;
+  }
+  .experience-container {
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  .experience-cards-div {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem 2rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .experience-heading {
+    font-size: 80px;
+  }
+  .experience-container {
+    max-width: 1600px;
+  }
+  .experience-cards-div {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2.5rem 2.5rem;
+  }
+}
+
 @media (max-width: 1380px) {
   .experience-heading {
     font-size: 40px;

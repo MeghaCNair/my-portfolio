@@ -33,6 +33,24 @@ export default function AcademicProjectCard({ projects, isDark }) {
     arrows: true,
     responsive: [
       {
+        breakpoint: 1920,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: true
+        }
+      },
+      {
+        breakpoint: 1600,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: true,
+          arrows: true
+        }
+      },
+      {
         breakpoint: 1400,
         settings: {
           slidesToShow: 2,

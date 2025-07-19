@@ -125,10 +125,10 @@
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  padding: 20px;
+  padding: 30px 20px 20px 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   background: linear-gradient(135deg, rgba(88, 28, 135, 0.95) 0%, rgb(31 27 35 / 95%) 100%);
@@ -297,6 +297,18 @@
 }
 
 // Responsive adjustments
+@media (min-width: 1920px) {
+  .skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1600px;
+    gap: 2.5rem 3.5rem;
+  }
+  
+  .flip-card {
+    height: 300px;
+  }
+}
+
 @media (max-width: 768px) {
   .software-skills-main-div {
     padding: 1rem 0;
@@ -328,6 +340,8 @@
   .card-description {
     font-size: 0.85rem;
     margin: 0.3rem 0;
+    position:absolute;
+    bottom:0;
   }
 
   .skill-items {
