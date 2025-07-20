@@ -71,12 +71,12 @@ https://fontawesome.com/icons?d=gallery */
       fontAwesomeClassname: "fas fa-chart-pie"
     },
     {
-      skillName: "Aritificial Intelligence",
+      skillName: "Artificial Intelligence",
       fontAwesomeClassname: "fas fa-robot",
       listOfSkills: ["ML", "NLP","LLM","DL","RAG"]
     },
     {
-      skillName: "Statististical Analysis",
+      skillName: "Statistical Analysis",
       fontAwesomeClassname: "fas fa-chart-line",
       listOfSkills: ["Statistics", "Hypothesis Testing","A/B Testing","Causal Inference"]
     },
@@ -91,7 +91,7 @@ https://fontawesome.com/icons?d=gallery */
       listOfSkills: ["AWS", "Azure","GCP"]
     },
     {
-      skillName: "Front end development",
+      skillName: "Front-end development",
       listOfSkills: ["html-5", "css3", "JavaScript", "ReactJS"],
       fontAwesomeClassname: "fas fa-laptop-code"
     },
