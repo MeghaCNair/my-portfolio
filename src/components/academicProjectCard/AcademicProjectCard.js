@@ -126,16 +126,16 @@ export default function AcademicProjectCard({ projects, isDark }) {
                     <h3 className={isDark ? "dark-mode project-title" : "project-title"}>
                       {project.title}
                     </h3>
-                    {project.inProgress && (
+                  </div>
+                  <p className={isDark ? "dark-mode project-subtitle" : "project-subtitle"}>
+                    {project.subtitle}
+                  </p>
+                  {project.inProgress && (
                       <span className="in-progress-flag">
                         <i className="fas fa-clock"></i>
                         In Progress
                       </span>
                     )}
-                  </div>
-                  <p className={isDark ? "dark-mode project-subtitle" : "project-subtitle"}>
-                    {project.subtitle}
-                  </p>
                 </div>
                 
                 <div className={`project-card-body ${expandedCards[index] ? 'expanded' : ''}`}>

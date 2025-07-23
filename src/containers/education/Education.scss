@@ -14,7 +14,7 @@
 
 .education-section > * {
   flex: 1;
-  margin-bottom: 30px;
+  //margin-bottom: 30px;
 }
 
 .education-card-container {
@@ -58,4 +58,8 @@
   .education-text-subtitle {
     font-size: 22px;
   }
+}
+.education-section li.subTitle {
+  font-size: 0.8rem;
+  line-height: 1.2rem;
 }

@@ -66,24 +66,24 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "Data Analysis",
-      listOfSkills: ["Python", "R", "Tableau", "Power BI","MS Excel","SQL", "Hypothesis Testing","A/B Testing"],
-      fontAwesomeClassname: "fas fa-chart-pie"
-    },
-    {
       skillName: "AI",
       fontAwesomeClassname: "fas fa-robot",
       listOfSkills: ["ML", "NLP","LLM","DL","RAG"]
     },
     {
-      skillName: "DBMS/Big Data",
-      fontAwesomeClassname: "fas fa-database",
-      listOfSkills: ["SQL", "NoSQL","MongoDB","PySpark","Hive","Hadoop","Spark"]
+      skillName: "Data Analysis",
+      listOfSkills: ["Python", "R", "Tableau", "Power BI","MS Excel","SQL", "Hypothesis Testing","A/B Testing"],
+      fontAwesomeClassname: "fas fa-chart-pie"
     },
     {
       skillName: "Cloud",
       fontAwesomeClassname: "fas fa-cloud",
       listOfSkills: ["AWS", "Azure","GCP"]
+    },
+    {
+      skillName: "DBMS/Big Data",
+      fontAwesomeClassname: "fas fa-database",
+      listOfSkills: ["SQL", "NoSQL","MongoDB","PySpark","Hive","Hadoop","Spark"]
     },
     {
       skillName: "UI/UX",
@@ -325,7 +325,7 @@ const academicProjects = {
     {
       title: "JobAssist – AI-Powered Career Platform",
       subtitle: "AI in Action Hackathon",
-      techStack: ["FastAPI", "MongoDB Atlas", "React", "GCP (Cloud Run, GCS)", "Gemini API"],
+      techStack: ["Gemini API","LLM","RAG","Sentence Transformers","Docker","FastAPI", "MongoDB Atlas", "React", "GCP (Cloud Run, GCS)"],
       details: [
         "Designed and developed a personalized job recommendation platform using LLMs and RAG techniques.",
         "Implemented resume upload, MongoDB-based profile management, and job matching via vector search.",
@@ -335,9 +335,33 @@ const academicProjects = {
       demoUrl: "https://jobassist-frontend-megha-2025.web.app/login",
     },
     {
+      "title": "RAG-based Recommendation Engine for Women's Wellness",
+      "subtitle": "Generative AI & MLOps",
+      "details": [
+        "Engineered an end-to-end AI system that provides personalized, real-time product recommendations and contextual health information, specifically tailored for women's non-medical wellness needs.",
+        "Designed and built a Retrieval-Augmented Generation (RAG) system that retrieves semantically relevant products and expert articles based on user queries, using sentence-transformers for embeddings and a Faiss vector index.",
+        "Integrated a locally-run LLM (e.g., Llama-3) to synthesize retrieved information into a natural-language recommendation, providing a personalized and explanatory user experience.",
+        "Architected a real-time system using FastAPI and Docker containers to serve low-latency recommendations, demonstrating a full-stack AI deployment capability.",
+        "Implemented a bias mitigation strategy and designed the system with ethical considerations, ensuring recommendations are diverse and context is non-medical."
+      ],
+      "techStack": [
+        "Python",
+        "LLMs (Llama-3)",
+        "Hugging Face",
+        "Faiss",
+        "FastAPI",
+        "Docker",
+        "PyTorch",
+        "Git",
+        "DVC"
+      ],
+      "github": "https://github.com/MeghaCNair",
+      "inProgress": true
+    },
+    {
       title: "Sentiment Analysis using LLMs",
       subtitle: "Natural Language Processing",
-      techStack: ["Python", "Hugging Face", "BERT", "Gemma", "Logistic Regression", "LSTM"],
+      techStack: ["LLMS","Hugging Face", "BERT", "Gemma","LSTM","Python","Logistic Regression"],
       details: [
         "Built a multi-label emotion classification pipeline using LLMs and deep learning models.",
         "Achieved 61% F1-macro score on unseen test data across 11 emotion classes.",
@@ -345,8 +369,33 @@ const academicProjects = {
       ],
       github: "https://github.com/MeghaCNair/SentimentAnalysisusingLLMs"
     },
+      {
+        "title": "Fuel Blend Property Prediction for Optimized Energy Compositions",
+        "subtitle": "Machine Learning | XGBoost | CatBoost | Neural Networks",
+        "details": [
+          "Built a high-performance ML pipeline to predict 10 key physical properties of synthetic fuel blends based on component-level fractional and property data.",
+          "Engineered robust preprocessing and feature pipelines: normalized component fractions, removed constant features, clipped outliers, and created fraction-property interaction features and component-level aggregates.",
+          "Trained separate per-target models using XGBoost and CatBoost with extensive hyperparameter tuning via GridSearchCV, yielding high-accuracy predictions and optimized leaderboard scores.",
+          "Identified weak targets using leaderboard Shell scoring and applied targeted models (e.g., neural networks and CatBoost) to improve performance selectively for those properties.",
+          "Implemented a modular inference system with proper ID tracking, model ensembling, and leaderboard scoring metrics (MAPE-based) aligned with competition guidelines."
+        ],
+        "techStack": [
+          "Python",
+          "XGBoost",
+          "CatBoost",
+          "Scikit-learn",
+          "PyTorch",
+          "Pandas",
+          "NumPy",
+          "Matplotlib",
+          "GridSearchCV",
+          "Joblib"
+        ],
+        "github": "https://github.com/MeghaCNair/FuelBlendPropertyPrediction",
+        "inProgress": true
+      },
     {
-      title: "Predictive Modeling with ML",
+      title: "Loan Default Prediction",
       subtitle: "Applied Machine Learning",
       techStack: ["Python", "Scikit-learn", "XGBoost", "Logistic Regression", "SHAP"],
       details: [
@@ -434,9 +483,9 @@ const resumeSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Discuss an opportunity or just want to say hi? My Inbox is open for all."),
   subtitle:
-    "Discuss an opportunity or just want to say hi? My Inbox is open for all.",
+    "",
   
   email_address: "meghacnair96@gmail.com"
 };

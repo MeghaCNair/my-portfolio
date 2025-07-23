@@ -1,5 +1,11 @@
 @import "../../_globalColor";
 
+
+#root, .main, .software-skills-main-div {
+  position: relative;
+  z-index: 1;
+}
+
 .dev-icons {
   padding-left: 0;
   list-style: none;
