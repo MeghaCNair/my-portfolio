@@ -66,19 +66,14 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "Data Analysis and Visualization",
-      listOfSkills: ["Python", "R", "Tableau", "Power BI","MS Excel","SQL"],
+      skillName: "Data Analysis",
+      listOfSkills: ["Python", "R", "Tableau", "Power BI","MS Excel","SQL", "Hypothesis Testing","A/B Testing"],
       fontAwesomeClassname: "fas fa-chart-pie"
     },
     {
-      skillName: "Aritificial Intelligence",
+      skillName: "AI",
       fontAwesomeClassname: "fas fa-robot",
       listOfSkills: ["ML", "NLP","LLM","DL","RAG"]
-    },
-    {
-      skillName: "Statististical Analysis",
-      fontAwesomeClassname: "fas fa-chart-line",
-      listOfSkills: ["Statistics", "Hypothesis Testing","A/B Testing","Causal Inference"]
     },
     {
       skillName: "DBMS/Big Data",
@@ -86,19 +81,14 @@ https://fontawesome.com/icons?d=gallery */
       listOfSkills: ["SQL", "NoSQL","MongoDB","PySpark","Hive","Hadoop","Spark"]
     },
     {
-      skillName: "Cloud Technologies",
+      skillName: "Cloud",
       fontAwesomeClassname: "fas fa-cloud",
       listOfSkills: ["AWS", "Azure","GCP"]
     },
     {
-      skillName: "Front end development",
-      listOfSkills: ["html-5", "css3", "JavaScript", "ReactJS"],
+      skillName: "UI/UX",
+      listOfSkills: ["html-5", "css3", "JavaScript", "ReactJS","Figma","Canva","Framer"],
       fontAwesomeClassname: "fas fa-laptop-code"
-    },
-    {
-      skillName: "Project Management",
-      fontAwesomeClassname: "fas fa-tasks",
-      listOfSkills: ["Agile", "Scrum", "Kanban"]
     },
     {
       skillName:"Domains",
