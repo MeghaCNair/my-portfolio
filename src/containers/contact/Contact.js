@@ -6,6 +6,7 @@ import {Fade} from "react-reveal";
 import email from "../../assets/lottie/email";
 import DisplayLottie from "../../components/displayLottie/DisplayLottie";
 import StyleContext from "../../contexts/StyleContext";
+import myPhoto from "../../assets/images/Me.jpeg";
 
 export default function Contact() {
   const {isDark} = useContext(StyleContext);
@@ -14,6 +15,12 @@ export default function Contact() {
       <div className="main contact-margin-top" id="contact">
         <div className="contact-div-main">
           <div className="contact-header">
+            <img
+              src={myPhoto}
+              alt="Megha C Nair profile"
+              className="profile-photo-contact"
+              style={{ borderRadius: "50%", width: "120px", height: "120px", objectFit: "cover", boxShadow: "0 2px 8px rgba(0,0,0,0.12)", marginBottom: "1.2rem" }}
+            />
             <h1 className="heading contact-title">{contactInfo.title}</h1>
             <p
               className={
