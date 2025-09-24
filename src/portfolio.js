@@ -68,7 +68,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "AI",
       fontAwesomeClassname: "fas fa-robot",
-      listOfSkills: ["ML", "NLP","LLM","DL","RAG"]
+      listOfSkills: ["ML", "NLP","LLM","DL","RAG","langChain","langGraph","MLops"]
     },
     {
       skillName: "Data Analysis",
@@ -87,7 +87,7 @@ https://fontawesome.com/icons?d=gallery */
     },
     {
       skillName: "UI/UX",
-      listOfSkills: ["html-5", "css3", "JavaScript", "ReactJS","Figma","Canva","Framer"],
+      listOfSkills: ["html-5", "css3", "JavaScript","Typescript", "ReactJS","Figma","Canva","Framer"],
       fontAwesomeClassname: "fas fa-laptop-code"
     },
     {
@@ -157,7 +157,7 @@ const workExperiences = {
       role: "Teaching Assistant",
       company: "The University of Texas at Dallas",
       companylogo: require("./assets/images/UTDLOGO.png"),
-      date: "Aug 2024 – Present",
+      date: "Aug 2024 – May 2025",
       desc: "",
       descBullets: [
         "Facilitated practical learning in data visualization and machine learning using R and Python, improving assessment outcomes by 20%. ",
@@ -171,9 +171,10 @@ const workExperiences = {
       date: "Jun 2022 - July 2023",
       desc: "",
       descBullets: [
-        "Developed a mobile Point-of-Sale (mPOS) Application UI for The Container Store increasing customer satisfaction by 20%.",
-        "Conducted funnel analysis to identify drop-off points, optimizing user navigation and reducing drop-off rates by 18%. ",
-        "Engineered clickstream analysis to monitor user behavior resulting in a 15% increase in sales conversion rates."
+        "Developed behavioral segmentation and clustering models to optimize personalization, delivering a 15% lift in sales conversions.",
+        "Conducted funnel analysis to pinpoint drop-off points and implemented strategic improvements reducing drop-off rates by 18%.",
+        "Built data-driven mPOS UI using ReactJS, enabling endless aisle selling and improving customer satisfaction by 20%.",
+        "Collaborated with PMs/engineers to operationalize insights via A/B testing and ML-driven workflows, reducing churn by 10%."
       ]
     },
     {
@@ -183,9 +184,10 @@ const workExperiences = {
       date: "Nov 2018 – Jun 2022",
       desc: "",
       descBullets: [
-        "Spearheaded the development of a web application for creating custom client proposals, cutting operational costs and time by 90%. ",
-        "Integrated intelligent template recommendations based on historical usage, improving stakeholder efficiency by 30%.",
-        "Collaborated with cross-functional teams to transform client requirements into visually engaging, interactive solutions. "
+        "Built automated proposal generation pipelines (Python, SQL, JavaScript), reducing operational cost and turnaround time by 90%.",
+        "Integrated PyTorch-based intelligent template recommendation systems, improving stakeholder efficiency by 30%. ",
+        "Optimized SQL queries and data pipelines for complex relational databases, ensuring data integrity and cutting query latency by 25%.",
+        "Collaborated with cross-functional teams to transform client requirements into visually engaging, interactive solutions."
       ]
     }
   ]
