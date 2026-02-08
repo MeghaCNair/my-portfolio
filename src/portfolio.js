@@ -68,7 +68,7 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "AI",
       fontAwesomeClassname: "fas fa-robot",
-      listOfSkills: ["ML", "NLP","LLM","DL","RAG","langChain","langGraph","MLops"]
+      listOfSkills: ["ML","LLM","RAG","Google ADK","Dialogflow CX","langChain","langGraph","MLops"]
     },
     {
       skillName: "Data Analysis",
@@ -112,7 +112,8 @@ const educationInfo = {
       duration: "January 2024 - December 2025",
       desc: "Teaching Assistant and Student Ambassador for the program.",
       descBullets: [
-        "Key courses include Statistics, Business Analytics, Machine Learning, Predictive Modeling, Business Optimizations, Natural Language Processing, Big Data, Cloud Technologies, Deep learning, and AI"
+        "Key courses include Statistics, Business Analytics, Machine Learning, Predictive Modeling, Business Optimizations, Natural Language Processing, Big Data, Cloud Technologies, Deep learning, and AI",
+        "As a teaching assistant, hosted tutorials on R, Power BI, JMP, and Machine Learning, facilitating hands-on learning in data visualization and analytics with R/Python, which improved student assessment outcomes by 20%."
       ]
     },
     {
@@ -154,14 +155,15 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Teaching Assistant",
-      company: "The University of Texas at Dallas",
-      companylogo: require("./assets/images/UTDLOGO.png"),
+      role: "AI/ML Intern",
+      company: "Mr.Cooper",
+      companylogo: require("./assets/images/Rocket_Mr_Cooper_Logo.jpg"),
       date: "Aug 2024 – May 2025",
       desc: "",
       descBullets: [
-        "Facilitated practical learning in data visualization and machine learning using R and Python, improving assessment outcomes by 20%. ",
-        "Enhanced course curriculum and content according to industry trends and requirements. "
+        "Developed production-ready ML-driven voice agents using Dialogflow CX, applying software engineering best practices formodularity, robustness, and maintainability.",
+        "Applied LLM guardrails and instruction tuning to ensure reliable, compliant behavior, reducing escalation to human agents.",
+        "Built an AI agent using Google ADK to answer ad-hoc business metric questions, enabling non-technical teams to self-serve insights efficiently."
       ]
     },
     {
@@ -251,8 +253,8 @@ const achievementSection = {
       imageAlt: "data mining graduate certificate",
       footerLink: [
         {
-          name: "Certification",
-          url: ""
+          name: "Graduate Certificate",
+          url: "../assets/cerificates/dataMininingDiploma.pdf"
         }
       ]
     },
@@ -337,65 +339,15 @@ const academicProjects = {
       demoUrl: "https://jobassist-frontend-megha-2025.web.app/login",
     },
     {
-      "title": "RAG-based Recommendation Engine for Women's Wellness",
-      "subtitle": "Generative AI & MLOps",
-      "details": [
-        "Engineered an end-to-end AI system that provides personalized, real-time product recommendations and contextual health information, specifically tailored for women's non-medical wellness needs.",
-        "Designed and built a Retrieval-Augmented Generation (RAG) system that retrieves semantically relevant products and expert articles based on user queries, using sentence-transformers for embeddings and a Faiss vector index.",
-        "Integrated a locally-run LLM (e.g., Llama-3) to synthesize retrieved information into a natural-language recommendation, providing a personalized and explanatory user experience.",
-        "Architected a real-time system using FastAPI and Docker containers to serve low-latency recommendations, demonstrating a full-stack AI deployment capability.",
-        "Implemented a bias mitigation strategy and designed the system with ethical considerations, ensuring recommendations are diverse and context is non-medical."
-      ],
-      "techStack": [
-        "Python",
-        "LLMs (Llama-3)",
-        "Hugging Face",
-        "Faiss",
-        "FastAPI",
-        "Docker",
-        "PyTorch",
-        "Git",
-        "DVC"
-      ],
-      "github": "https://github.com/MeghaCNair",
-      "inProgress": true
-    },
-    {
-      title: "Sentiment Analysis using LLMs",
-      subtitle: "Natural Language Processing",
-      techStack: ["LLMS","Hugging Face", "BERT", "Gemma","LSTM","Python","Logistic Regression"],
+      title:"ShelfOutTracker - Inventory Management System",
+      subtitle: "Inventory Management System",
+      techStack: ["Python", "LangGraph","MCP Server"],
       details: [
-        "Built a multi-label emotion classification pipeline using LLMs and deep learning models.",
-        "Achieved 61% F1-macro score on unseen test data across 11 emotion classes.",
-        "Used Hugging Face Transformers (BERT, Llama, Gemma) for robust feature extraction."
+        "Detect products at risk of going out‑of‑stock (OOS) within the next 24–72 hours, then recommend the smallest, fastest fix (replenish qty, substitute, or de‑list), and route it for approval.",
+        "Recommendations go to Slack/Email with approve / snooze / reject actions.",
       ],
-      github: "https://github.com/MeghaCNair/SentimentAnalysisusingLLMs"
+      github: "https://github.com/MeghaCNair/ShelfOutTracker"
     },
-      {
-        "title": "Fuel Blend Property Prediction for Optimized Energy Compositions",
-        "subtitle": "Machine Learning | XGBoost | CatBoost | Neural Networks",
-        "details": [
-          "Built a high-performance ML pipeline to predict 10 key physical properties of synthetic fuel blends based on component-level fractional and property data.",
-          "Engineered robust preprocessing and feature pipelines: normalized component fractions, removed constant features, clipped outliers, and created fraction-property interaction features and component-level aggregates.",
-          "Trained separate per-target models using XGBoost and CatBoost with extensive hyperparameter tuning via GridSearchCV, yielding high-accuracy predictions and optimized leaderboard scores.",
-          "Identified weak targets using leaderboard Shell scoring and applied targeted models (e.g., neural networks and CatBoost) to improve performance selectively for those properties.",
-          "Implemented a modular inference system with proper ID tracking, model ensembling, and leaderboard scoring metrics (MAPE-based) aligned with competition guidelines."
-        ],
-        "techStack": [
-          "Python",
-          "XGBoost",
-          "CatBoost",
-          "Scikit-learn",
-          "PyTorch",
-          "Pandas",
-          "NumPy",
-          "Matplotlib",
-          "GridSearchCV",
-          "Joblib"
-        ],
-        "github": "https://github.com/MeghaCNair/FuelBlendPropertyPrediction",
-        "inProgress": true
-      },
     {
       title: "Loan Default Prediction",
       subtitle: "Applied Machine Learning",
@@ -407,6 +359,41 @@ const academicProjects = {
       ],
       github: "https://github.com/MeghaCNair/MLPredictiveModels"
     },
+    {
+      "title": "Fuel Blend Property Prediction for Optimized Energy Compositions",
+      "subtitle": "Machine Learning | XGBoost | CatBoost | Neural Networks",
+      "details": [
+        "Built a high-performance ML pipeline to predict 10 key physical properties of synthetic fuel blends based on component-level fractional and property data.",
+        "Engineered robust preprocessing and feature pipelines: normalized component fractions, removed constant features, clipped outliers, and created fraction-property interaction features and component-level aggregates.",
+        "Trained separate per-target models using XGBoost and CatBoost with extensive hyperparameter tuning via GridSearchCV, yielding high-accuracy predictions and optimized leaderboard scores.",
+        "Identified weak targets using leaderboard Shell scoring and applied targeted models (e.g., neural networks and CatBoost) to improve performance selectively for those properties.",
+        "Implemented a modular inference system with proper ID tracking, model ensembling, and leaderboard scoring metrics (MAPE-based) aligned with competition guidelines."
+      ],
+      "techStack": [
+        "Python",
+        "XGBoost",
+        "CatBoost",
+        "Scikit-learn",
+        "PyTorch",
+        "Pandas",
+        "NumPy",
+        "Matplotlib",
+        "GridSearchCV",
+        "Joblib"
+      ]
+    },
+    {
+      title:"Sentiment Analysis using LLMs",
+      subtitle: "Natural Language Processing",
+      techStack: ["LLMS","Hugging Face", "BERT", "Gemma","LSTM","Python","Logistic Regression"],
+      details: [
+        "Built a multi-label emotion classification pipeline using LLMs and deep learning models.",
+        "Achieved 61% F1-macro score on unseen test data across 11 emotion classes.",
+        "Used Hugging Face Transformers (BERT, Llama, Gemma) for robust feature extraction."
+      ],
+      github: "https://github.com/MeghaCNair/SentimentAnalysisusingLLMs"
+    },
+      
     {
       title: "Big Data Analysis",
       subtitle: "Big Data",
